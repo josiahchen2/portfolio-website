@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Josiah Chen is a Math and Computer Science student at UCLA, exploring machine learning through creative projects." />
+    <meta name="theme-color" content="#07100f" />
+    <title>Josiah Chen — Math / CS at UCLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="monogram" href="#top" aria-label="Josiah Chen, home">JC<span class="dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:josiahchen2@gmail.com">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="ambient" aria-hidden="true">
+          <canvas class="ambient__canvas"></canvas>
+          <div class="grain"></div>
+        </div>
+        <div class="hero__eyebrow reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          Los Angeles, California
+        </div>
+        <div class="hero__content">
+          <h1 id="hero-title" class="reveal reveal--delay-1">Josiah<br />Chen<span class="dot">.</span></h1>
+          <p class="hero__intro reveal reveal--delay-2">Math <span>/</span> CS student<br />at UCLA</p>
+        </div>
+        <a class="scroll-cue reveal reveal--delay-3" href="#work">
+          <span>Explore selected work</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m0 0 6-6m-6 6-6-6" /></svg>
+        </a>
+      </section>
+
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="kicker">01 / Selected work</p>
+          <h2 id="work-title">Experiments in<br />intelligent systems.</h2>
+        </div>
+
+        <div class="project-list">
+          <a class="project" href="https://github.com/josiahchen2/AI-Digit-Image-Generator" target="_blank" rel="noreferrer" aria-label="AI Digit Image Generator on GitHub (opens in a new tab)">
+            <span class="project__number">01</span>
+            <span class="project__body">
+              <span class="project__title">AI Digit Image<br class="mobile-break" /> Generator</span>
+              <span class="project__meta">Machine learning · Generative AI</span>
+            </span>
+            <span class="project__arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project" href="https://deployv1-xi.vercel.app/" target="_blank" rel="noreferrer" aria-label="AI Generated Music Detector live site (opens in a new tab)">
+            <span class="project__number">02</span>
+            <span class="project__body">
+              <span class="project__title">AI Generated<br class="mobile-break" /> Music Detector</span>
+              <span class="project__meta">Machine learning · Audio</span>
+            </span>
+            <span class="project__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <p class="kicker">02 / About</p>
+        <div class="about__grid">
+          <h2 id="about-title">Curious by<br />nature<span class="dot">.</span></h2>
+          <div class="about__copy">
+            <p>I’m a Math and Computer Science student at UCLA, interested in the space where rigorous thinking meets creative technology.</p>
+            <p>I build projects to better understand machine learning—and to explore what it can make possible.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-shell" aria-labelledby="contact-title">
+        <p class="kicker">03 / Contact</p>
+        <div class="contact__content">
+          <h2 id="contact-title">Let’s make<br />something <em>good.</em></h2>
+          <a class="email-link" href="mailto:josiahchen2@gmail.com">
+            <span>josiahchen2@gmail.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>© <span id="year">2026</span> Josiah Chen</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

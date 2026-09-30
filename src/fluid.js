@@ -5,10 +5,10 @@ if (context) {
   const hero = canvas.closest('.hero');
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   const colors = [
-    [5, 13, 20],     // Near black
-    [12, 38, 56],    // Dark blue
-    [18, 76, 79],    // Teal
-    [59, 104, 79],   // Muted green
+    [7, 30, 53],     // Deep blue
+    [20, 86, 145],   // Cobalt blue
+    [12, 153, 151],  // Vivid teal
+    [49, 178, 112],  // Emerald green
   ];
   const stops = [0, 0.34, 0.68, 1];
   let animationFrame = 0;

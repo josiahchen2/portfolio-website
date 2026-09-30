@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Josiah Chen is a Math and Computer Science student at UCLA, exploring machine learning through creative projects." />
+    <meta name="description" content="Josiah Chen is a UCLA Computer Science and Math student and software engineering intern building reliable web applications, Python tooling, and AI products." />
     <meta name="theme-color" content="#07100f" />
-    <title>Josiah Chen — Math / CS at UCLA</title>
+    <title>Josiah Chen — Software Engineering Intern</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
@@ -18,8 +18,10 @@
       <a class="monogram" href="#top" aria-label="Josiah Chen, home">JC<span class="dot">.</span></a>
       <nav aria-label="Main navigation">
         <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
         <a href="#about">About</a>
-        <a href="mailto:josiahchen2@gmail.com">Contact <span aria-hidden="true">↗</span></a>
+        <a href="/Josiah_Chen_Resume_SWE.pdf" download>Resume <span aria-hidden="true">↗</span></a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -35,7 +37,14 @@
         </div>
         <div class="hero__content">
           <h1 id="hero-title" class="reveal reveal--delay-1">Josiah<br />Chen<span class="dot">.</span></h1>
-          <p class="hero__intro reveal reveal--delay-2">Math <span>/</span> CS student<br />at UCLA</p>
+          <div class="hero__details reveal reveal--delay-2">
+            <p class="hero__intro">UCLA Computer Science &amp; Math student building reliable software for real-world AI products.</p>
+            <p class="hero__proof">Software engineering intern <span aria-hidden="true">·</span> 3.98 GPA <span aria-hidden="true">·</span> Graduating June 2028</p>
+            <div class="hero__actions">
+              <a class="action-link action-link--primary" href="#work">View work <span aria-hidden="true">↘</span></a>
+              <a class="action-link" href="/Josiah_Chen_Resume_SWE.pdf" download>Download resume <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
         </div>
         <a class="scroll-cue reveal reveal--delay-3" href="#work">
           <span>Explore selected work</span>
@@ -46,49 +55,100 @@
       <section class="work section-shell" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <p class="kicker">01 / Selected work</p>
-          <h2 id="work-title">Experiments in<br />intelligent systems.</h2>
+          <h2 id="work-title">Software built<br />for real use.</h2>
         </div>
 
         <div class="project-list">
-          <a class="project" href="https://github.com/josiahchen2/AI-Digit-Image-Generator" target="_blank" rel="noreferrer" aria-label="AI Digit Image Generator on GitHub (opens in a new tab)">
+          <a class="project" href="https://deployv1-xi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Audiomark AI live app (opens in a new tab)">
             <span class="project__number">01</span>
             <span class="project__body">
-              <span class="project__title">AI Digit Image<br class="mobile-break" /> Generator</span>
-              <span class="project__meta">Machine learning · Generative AI</span>
+              <span class="project__title">Audiomark AI</span>
+              <span class="project__meta">Full-stack compliance tool · August 2026</span>
+              <span class="project__description">Shipped an app for verifying AI-generated audio watermarks and tracing provenance. Built a Python harness to test detection after audio manipulation, with a no-retention design.</span>
+              <span class="project__stack">Python · React · Next.js · Vite · Vercel</span>
+              <span class="project__destination">Visit live app <span aria-hidden="true">↗</span></span>
             </span>
             <span class="project__arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="project" href="https://deployv1-xi.vercel.app/" target="_blank" rel="noreferrer" aria-label="AI Generated Music Detector live site (opens in a new tab)">
+          <a class="project" href="https://github.com/josiahchen2/AI-Digit-Image-Generator" target="_blank" rel="noopener noreferrer" aria-label="AI Image Generator project on GitHub (opens in a new tab)">
             <span class="project__number">02</span>
             <span class="project__body">
-              <span class="project__title">AI Generated<br class="mobile-break" /> Music Detector</span>
-              <span class="project__meta">Machine learning · Audio</span>
+              <span class="project__title">AI Image Generator</span>
+              <span class="project__meta">Machine learning project · June 2024</span>
+              <span class="project__description">Built a modular TensorFlow DCGAN and an end-to-end pipeline for generating digit images. Tuned training stability and used visualizations to debug convergence.</span>
+              <span class="project__stack">Python · TensorFlow · NumPy · ImageIO · Matplotlib</span>
+              <span class="project__destination">View project <span aria-hidden="true">↗</span></span>
             </span>
             <span class="project__arrow" aria-hidden="true">↗</span>
           </a>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="kicker">02 / Experience</p>
+          <h2 id="experience-title">Engineering<br />experience.</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-item__heading">
+              <h3>Trustworthy AI Lab</h3>
+              <p>Software Engineering Intern <span aria-hidden="true">·</span> Summer 2026</p>
+            </div>
+            <ul>
+              <li>Built a Python pipeline to embed and verify provenance metadata in AI-generated audio from ElevenLabs and Suno, reducing manual checks.</li>
+              <li>Translated California AI Transparency Act requirements into scripted compliance checks and built PyTorch/NumPy tests for watermark robustness under compression and other distortions.</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <div class="experience-item__heading">
+              <h3>ACM AI Division</h3>
+              <p>Software Engineering Intern <span aria-hidden="true">·</span> Sep. 2025–present</p>
+            </div>
+            <ul>
+              <li>Implemented and debugged CNNs and core algorithms in Python, with unit tests against reference implementations.</li>
+              <li>Translated diffusion research into documented code and collaborated with 5+ engineers through code reviews and technical discussions.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section class="about section-shell" id="about" aria-labelledby="about-title">
-        <p class="kicker">02 / About</p>
+        <p class="kicker">03 / About</p>
         <div class="about__grid">
-          <h2 id="about-title">Curious by<br />nature<span class="dot">.</span></h2>
+          <h2 id="about-title">From idea<br />to working code<span class="dot">.</span></h2>
           <div class="about__copy">
-            <p>I’m a Math and Computer Science student at UCLA, interested in the space where rigorous thinking meets creative technology.</p>
-            <p>I build projects to better understand machine learning—and to explore what it can make possible.</p>
+            <p>I study Computer Science and Math at UCLA, where I’ve taken ideas from research and requirements through implementation, testing, and deployment.</p>
+            <div class="education">
+              <h3>Education</h3>
+              <p>UCLA · B.S. Computer Science and Math<br />Expected June 2028 · GPA 3.98 · USACO Silver</p>
+            </div>
           </div>
+        </div>
+        <div class="skills" aria-labelledby="skills-title">
+          <h3 id="skills-title">Engineering toolkit</h3>
+          <dl>
+            <div><dt>Languages</dt><dd>Python, C++, Java, JavaScript, HTML/CSS</dd></div>
+            <div><dt>Web</dt><dd>React, Next.js, Vite</dd></div>
+            <div><dt>Testing &amp; ML</dt><dd>Unit testing, Git, code review, PyTorch, TensorFlow, NumPy</dd></div>
+          </dl>
         </div>
       </section>
 
-      <section class="contact section-shell" aria-labelledby="contact-title">
-        <p class="kicker">03 / Contact</p>
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <p class="kicker">04 / Contact</p>
         <div class="contact__content">
-          <h2 id="contact-title">Let’s make<br />something <em>good.</em></h2>
+          <h2 id="contact-title">Open to software<br />engineering <em>internships.</em></h2>
           <a class="email-link" href="mailto:josiahchen2@gmail.com">
             <span>josiahchen2@gmail.com</span>
             <span aria-hidden="true">↗</span>
           </a>
+          <div class="contact__links">
+            <a href="https://github.com/josiahchen2" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/josiahchen" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="/Josiah_Chen_Resume_SWE.pdf" download>Resume <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
     </main>

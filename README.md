@@ -1,6 +1,6 @@
 # Josiah Chen — Portfolio
 
-A single-page software engineering portfolio featuring shipped work, engineering experience, and a resume that opens in a new tab. The hero uses an animated fluid gradient in a vivid blue, teal, and emerald palette. Each later section has its own coordinated color composition and slow moving light wash.
+A multipage software engineering portfolio with a homepage overview, dedicated Projects, Experience, About, and Contact pages, and two project showcases. The site uses Vite's multipage build and shares its navigation and footer through `src/layout.mjs`.
 
 ## Development
 
@@ -13,13 +13,26 @@ npm run dev
 
 ```bash
 npm run build
+npm run check
 ```
 
-The static site is generated in `dist/`. The resume in `public/` is copied to the root of that output and is available at `/Josiah_Chen_Resume_SWE.pdf`.
+The static site is generated in `dist/`. Each route has its own `index.html`, so direct links and refreshes work without a client-side router. The resume in `public/` is copied to the root of the output.
+
+## Routes
+
+- `/` — overview
+- `/projects/` — selected projects
+- `/projects/audiomark-ai/` — Audiomark AI showcase
+- `/projects/ai-image-generator/` — AI Image Generator showcase
+- `/experience/`, `/about/`, `/contact/` — dedicated sections
 
 ## Deploy to Vercel
 
-1. Push `main` to the [GitHub repository](https://github.com/josiahchen2/portfolio-website).
-2. In Vercel, create a new project from that repository with the root directory set to the repository root.
-3. Deploy the `main` branch. `vercel.json` selects Vite, runs `npm run build`, and serves `dist/`. No environment variables or rewrite rules are required.
-4. Check the live homepage, both project links, the contact links, and that the resume opens in a new tab.
+The existing `vercel.json` builds with `npm run build` and serves `dist/`. After deployment, check every route directly, navigate from the homepage to each section and project, and verify the live app, GitHub, contact, and resume links.
+
+Website Link: [josiahchen2.vercel.app](josiahchen2.vercel.app)
+
+
+## Content to confirm
+
+The project descriptions, dates, stacks, experience, education, availability, and contact details are carried from the original homepage. Confirm these details before treating the new pages as final portfolio copy. Project screenshots or diagrams can be added later if available.

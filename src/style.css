@@ -110,10 +110,21 @@ h1 { margin: 0; font-size: clamp(5rem, 11.5vw, 10.5rem); font-weight: 500; line-
   background: linear-gradient(115deg, transparent 19%, rgba(17, 112, 118, .18) 37%, rgba(8, 74, 91, .07) 54%, transparent 72%);
   animation-delay: -9s;
 }
+.experience-timeline { max-width: 950px; margin: 0 0 0 .45rem; padding: 0 0 0 clamp(2rem, 4vw, 3.5rem); list-style: none; border-left: 1px solid var(--line); }
+.experience-timeline__item { position: relative; padding: 0 0 clamp(2.5rem, 5vw, 4rem); }
+.experience-timeline__item + .experience-timeline__item { padding-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--line); }
+.experience-timeline__item:last-child { padding-bottom: 0; }
+.experience-timeline__item::before { content: ''; position: absolute; top: .35rem; left: calc(-1 * clamp(2rem, 4vw, 3.5rem) - .45rem - 1px); width: .9rem; height: .9rem; border: 2px solid var(--accent); border-radius: 50%; background: #063f47; box-shadow: 0 0 0 6px rgba(107, 255, 210, .08); }
+.experience-timeline__item + .experience-timeline__item::before { top: calc(clamp(2.5rem, 5vw, 4rem) + .35rem); }
+.experience-timeline__date { margin: 0 0 .75rem; color: #b7c4bb; font-size: .85rem; letter-spacing: .04em; }
+.experience-timeline h3 { margin: 0 0 .4rem; font-size: clamp(1.65rem, 3.5vw, 3rem); font-weight: 500; line-height: 1.15; letter-spacing: -.045em; }
+.experience-timeline__role { margin: 0; color: var(--accent); font-size: .95rem; }
+.experience-timeline__highlight { max-width: 710px; margin: 1.35rem 0 0; color: #cbd7d0; font-size: clamp(1rem, 1.4vw, 1.18rem); line-height: 1.55; }
 .experience-list { border-top: 1px solid var(--line); }
 .experience-item { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr); gap: clamp(2rem, 6vw, 6rem); padding: 3rem 0; border-bottom: 1px solid var(--line); }
 .experience-item__heading h3 { margin: 0 0 .75rem; font-size: clamp(1.45rem, 2.5vw, 2.4rem); font-weight: 500; letter-spacing: -.045em; }
 .experience-item__heading p { margin: 0; color: #b7c4bb; font-size: .85rem; line-height: 1.5; }
+.experience-item__heading p + p { margin-top: .35rem; }
 .experience-item ul { margin: 0; padding-left: 1.2rem; color: #cbd7d0; font-size: 1rem; line-height: 1.6; }
 .experience-item li + li { margin-top: 1rem; }
 
@@ -122,9 +133,24 @@ h1 { margin: 0; font-size: clamp(5rem, 11.5vw, 10.5rem); font-weight: 500; line-
   background: radial-gradient(ellipse 68% 66% at 14% 83%, rgba(32, 113, 75, .28), transparent 72%);
   animation-delay: -17s;
 }
+body[data-page="home"] .about#about { padding-top: clamp(4rem, 7vw, 7rem); padding-bottom: clamp(4rem, 7vw, 7rem); }
+body[data-page="home"] .about#about h2 { margin-bottom: clamp(2rem, 4vw, 3rem); font-size: clamp(2.8rem, 5vw, 5rem); }
 .about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; }
 .about__copy { padding-top: 1rem; max-width: 600px; }
 .about__copy p { margin: 0 0 2rem; color: #b9c5bf; font-size: clamp(1.2rem, 2.3vw, 2rem); line-height: 1.45; letter-spacing: -.035em; }
+body[data-page="home"] .about#about .about__copy { padding-top: .25rem; }
+body[data-page="home"] .about#about .about__copy p { margin-bottom: 0; font-size: clamp(1.1rem, 1.8vw, 1.4rem); letter-spacing: -.025em; }
+.recruiter-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(2rem, 6vw, 6rem); margin: clamp(1rem, 3vw, 2rem) 0 0; }
+.recruiter-facts > div { padding: 1.35rem 0 1.6rem; border-top: 1px solid var(--line); }
+.recruiter-facts dt, .recruiter-skills h3 { margin: 0 0 .7rem; color: #a7b9ae; font-size: .85rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+.recruiter-facts dd { margin: 0; color: var(--ink); font-size: clamp(1rem, 1.55vw, 1.2rem); line-height: 1.55; }
+.recruiter-skills { padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.recruiter-skills p { max-width: 1000px; margin: 0; color: #d1ddd5; font-size: 1rem; line-height: 1.7; }
+.recruiter-skills span { padding: 0 .3rem; color: var(--accent); }
+.about__links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 2rem; }
+.about__links a { color: var(--ink); font-size: 1rem; text-decoration: none; border-bottom: 1px solid rgba(241,255,249,.65); padding-bottom: .4rem; }
+.about__links a:hover { color: var(--accent); border-color: var(--accent); }
+.about > .section-link { margin-top: 2rem; }
 .education { padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .education h3, .skills h3 { margin: 0 0 1rem; font-size: .85rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
 .education p { margin: 0; color: #b9c5bf; font-size: 1rem; line-height: 1.7; letter-spacing: 0; }
@@ -157,11 +183,11 @@ h1 { margin: 0; font-size: clamp(5rem, 11.5vw, 10.5rem); font-weight: 500; line-
 .page-inner .page-hero h1 { max-width: 1150px; font-size: clamp(3.7rem, 9vw, 9rem); line-height: .9; overflow-wrap: anywhere; }
 .page-inner .page-hero .kicker { margin-bottom: 2.5rem; }
 .page-lede { max-width: 720px; margin: 2.5rem 0 0; color: #d1e2db; font-size: clamp(1.2rem, 2.3vw, 1.8rem); line-height: 1.45; }
-.page-actions { margin-top: 2rem; }
+.page-actions { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 2rem; }
 .page-content { padding-top: 2rem; }
 .page-inner .contact.page-hero, .page-inner .contact.page-content { min-height: auto; }
 .page-inner .about.page-content, .page-inner .experience.page-content, .page-inner .work.page-content, .page-inner .contact.page-content { padding-top: 2rem; }
-.page-inner .experience-item__heading h2 { margin: 0 0 .75rem; font-size: clamp(1.45rem, 2.5vw, 2.4rem); font-weight: 500; letter-spacing: -.045em; }
+.page-inner .experience-item__heading h2 { margin: 0 0 .75rem; font-size: clamp(1.45rem, 2.5vw, 2.4rem); font-weight: 500; line-height: 1.2; letter-spacing: -.045em; }
 .page-inner .education h2, .page-inner .skills h2 { margin: 0 0 1rem; font-size: .9rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
 .page-inner .about__copy p { font-size: clamp(1.1rem, 2vw, 1.5rem); }
 .detail-content { padding-top: 2rem; }
@@ -196,6 +222,9 @@ h1 { margin: 0; font-size: clamp(5rem, 11.5vw, 10.5rem); font-weight: 500; line-
   .experience-item ul { margin-top: 1.5rem; }
   .about__grid { display: block; }
   .about h2 { margin-bottom: 3rem; }
+  .recruiter-facts { grid-template-columns: 1fr; }
+  .recruiter-facts > div { padding: 1.1rem 0 1.35rem; }
+  .about__links { gap: 1rem 1.5rem; }
   .skills dl { grid-template-columns: 1fr; gap: 1.5rem; }
   .contact { min-height: 70vh; }
   .contact__content h2 { font-size: clamp(2.9rem, 11vw, 4.8rem); }

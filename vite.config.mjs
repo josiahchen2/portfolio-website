@@ -18,6 +18,7 @@ export default defineConfig({
     transformIndexHtml(html) {
       const page = html.match(/<body[^>]*data-page="([^"]+)"/)?.[1] ?? 'home';
       return html
+        .replace('  </head>', '    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />\n  </head>')
         .replace('<!-- site-header -->', header(page))
         .replace('<!-- site-footer -->', footer(page));
     },

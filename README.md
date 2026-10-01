@@ -1,6 +1,6 @@
 # Josiah Chen — Portfolio
 
-A multipage software engineering portfolio with a homepage overview, dedicated Projects, Experience, About, and Contact pages, and two project showcases. The site uses Vite's multipage build and shares its navigation and footer through `src/layout.mjs`.
+A multipage software engineering portfolio with a homepage overview, dedicated Projects, Experience & About, and Contact pages, and two project showcases. The site uses Vite's multipage build and shares its navigation and footer through `src/layout.mjs`.
 
 ## Development
 
@@ -24,7 +24,9 @@ The static site is generated in `dist/`. Each route has its own `index.html`, so
 - `/projects/` — selected projects
 - `/projects/audiomark-ai/` — Audiomark AI showcase
 - `/projects/ai-image-generator/` — AI Image Generator showcase
-- `/experience/`, `/about/`, `/contact/` — dedicated sections
+- `/experience/` — work history, background, education, and skills (`#experience` and `#about`)
+- `/about/` — redirects to `/experience/#about` for existing links
+- `/contact/` — contact links
 
 ## Deploy to Vercel
 
